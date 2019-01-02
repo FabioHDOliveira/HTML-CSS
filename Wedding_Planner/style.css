@@ -1,0 +1,250 @@
+.body
+{
+    margin: 0px;
+}
+
+#header
+{
+    background-image: url(images/header.jpg);
+    background-repeat: no-repeat;
+    width: 778px;
+    height: 368px;
+}
+
+#menu
+{
+    background-image: url(images/menu.jpg);
+    background-repeat: no-repeat;
+    width: 778px;
+    height: 117px;
+}
+
+#right
+{
+    background-image: url(images/left.jpg);
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 243px;
+}
+
+#left
+{
+    background-image: url(images/right.jpg);
+    background-repeat: no-repeat;
+    width: 508px;
+    height: 243px;
+}
+
+#left1
+{
+    background-image: url(images/left1.jpg);
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 243px;
+}
+
+#right1
+{
+    background-image: url(images/right1.jpg);
+    background-repeat: no-repeat;
+    width: 508px;
+    height: 243px;
+}
+
+#left3
+{
+    background-image: url(images/left3.jpg);
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 243px;
+}
+
+#right3
+{
+    background-image: url(images/right3.jpg);
+    background-repeat: no-repeat;
+    width: 508px;
+    height: 243px;
+}
+
+#footer
+{
+    background-image: url(images/footer.jpg);
+    background-repeat: no-repeat;
+    width: 778px;
+    height: 52px;
+}
+
+#sendimg
+{
+    background-image: url(images/sendimg.jpg);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 17px;
+}
+
+.sendtxt
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #707070;
+}
+
+.form
+{
+    font-family: Tahoma;
+    font-size: 10px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: solid 1px #000000;
+}
+
+.form2
+{
+    font-family: Tahoma;
+    font-size: 10px;
+    height: 16px;
+    background-color: #FFFFFF;
+    border: solid 1px #000000;
+}
+
+.head
+{
+    font-family: "Comic Sans MS";
+    font-size: 24px;
+    color: #DDDDEA;
+    text-decoration: none;
+}
+
+.slogentxt
+{
+    font-family: "Comic Sans MS";
+    font-size: 13px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menutxt
+{
+    font-family: "Comic Sans MS";
+    font-size: 13px;
+    color: #6B849A;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menutxt a
+{
+    font-family: "Comic Sans MS";
+    font-size: 13px;
+    color: #6B849A;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menutxt a:hover
+{
+    font-family: "Comic Sans MS";
+    font-size: 13px;
+    color: #6B849A;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.heading
+{
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.heading a
+{
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.heading a:hover
+{
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.content
+{
+    font-family: Tahoma;
+    font-size: 10px;
+    color: #4F4F4F;
+    text-decoration: none;
+}
+
+.content a
+{
+    font-family: Tahoma;
+    font-size: 10px;
+    color: #4F4F4F;
+    text-decoration: none;
+}
+
+.content a:hover
+{
+    font-family: Tahoma;
+    font-size: 10px;
+    color: #4F4F4F;
+    text-decoration: none;
+}
+
+.content2
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #4F4F4F;
+    text-decoration: none;
+}
+
+.content2 a
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #4F4F4F;
+    text-decoration: none;
+}
+
+.content2 a:hover
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #4F4F4F;
+    text-decoration: none;
+}
+
+.footertxt
+{
+    font-family: Tahoma;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footertxt a
+{
+    font-family: Tahoma;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footertxt a:hover
+{
+    font-family: Tahoma;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}

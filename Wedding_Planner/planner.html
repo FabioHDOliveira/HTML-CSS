@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Don's Wedding Planner</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var guestCost = 0;
+        var limousinesCost = 0;
+        var liveMusicCost = 0;
+        var flowersCost = 0;
+        var totalEstimate = 0;
+        var liveMusic = false;
+        var flowers = false;
+        
+        function calcGuests() {
+            totalEstimate -= guestCost;
+            guestCost = document.details.numGuests.value * 65;
+            totalEstimate += guestCost;
+            document.estimate.cost.value = "$" + totalEstimate;
+        }
+        
+        function calcLimousines() {
+            totalEstimate -= limousinesCost;
+            limousinesCost = document.details.numLimousines.value * 125;
+            totalEstimate += limousinesCost;
+            document.estimate.cost.value = "$" + totalEstimate;
+        }
+        
+        function addMusic() {
+            (liveMusic == false) ? liveMusicCost = 500 : liveMusicCost = 0; totalEstimate += liveMusicCost; liveMusic = true; document.estimate.cost.value = "$" + totalEstimate;
+        }
+        
+        function removeMusic(){
+           (liveMusic == true) ? liveMusicCost = -500 : liveMusicCost = 0; totalEstimate += liveMusicCost; liveMusic = false; document.estimate.cost.value = "$" + totalEstimate; 
+        }
+
+        function addFlowers(){
+            (flowers == false) ? flowersCost = 400 : flowersCost = 0; totalEstimate += flowersCost; flowers = true; document.estimate.cost.value = "$" + totalEstimate;
+        }
+        
+        function removeFlowers(){
+            (flowers == true) ? flowersCost = -400 : flowersCost = 0; totalEstimate += flowersCost; flowers = false; document.estimate.cost.value = "$" + totalEstimate;
+        }
+        
+        /* ]]> */
+        
+    </script>
+</head>
+<body class="body">
+    <div>
+        <div style="width: 778px; height: 780px;">
+            <div id="header">
+                <div style="padding-left: 305px; padding-top: 58px;" class="head">
+                    DON'S WEDDINGS</div>
+                <div style="padding-left: 310px; padding-top: 0px; line-height: 10px;" class="slogentxt">
+                    Weddings made easy!</div>
+            </div>
+            <div id="menu">
+                <div style="padding-left: 328px; padding-top: 38px;" class="menutxt">
+                    <a href="planner.html">PLANNER</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="guestbook.html">GUESTBOOK</a>
+                </div>
+            </div>
+            <div style="width: 778px; height: 243px;">
+                <div id="left" style="float: left">
+                    <div style="padding-left: 50px;">
+                        <div style="padding-left: 80px; padding-top: 10px;" class="heading">
+                            DETAILS
+                        </div>
+                        <div class="content" style="padding-right: 25px; padding-left: 150px; padding-top: 12px;">
+                            <form action="" name="details">
+                                <table>
+                                    <tr>
+                                        <td>Guests<br />($65 each)</td>
+                                        <td><input type="text" name="numGuests" size="3" onchange="calcGuests()"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Limousines<br />($125 each)</td>
+                                        <td><input type="text" name="numLimousines" size="3" onchange="calcLimousines()"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Live Music<br />($500)</td>
+                                        <td>
+                                            <input type="radio" name="music" onclick="addMusic()" />Yes
+                                            <input type="radio" name="music" checked="checked" onclick="removeMusic()" />No
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Flowers<br />($400)</td>
+                                        <td>
+                                            <input type="radio" name="flowers" onclick="addFlowers()" />Yes
+                                            <input type="radio" name="flowers" checked="checked" onclick="removeFlowers()" />No
+                                        </td>
+                                    </tr>                                    
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="right" style="float: right">
+                    <div style="padding-left: 25px;">
+                        <div style="padding-left: 50px; padding-top: 10px;" class="heading">
+                            ESTIMATE
+                        </div>
+                        <div class="content" style="padding-right: 10px; padding-top: 120px;">
+                            <form action="" name="estimate">
+                                <p>
+                                    Estimate total cost:
+                                    <input type="text" name="cost" size="5" style="border-style: none; border-color: inherit; border-width: medium; background-color: Transparent" />
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="footertxt" style="padding-top: 28px; padding-left: 250px;">
+                    Copyright 2011. Don's Weddings. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

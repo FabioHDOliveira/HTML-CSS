@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Don's Weddings Guestbook</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        /* <![CDATA[ */
+       
+        function addGuest(name, relationship) {
+            var guestInfo = name + ", ";
+            guestInfo += relationship + "\r";
+            return guestInfo;
+        }
+        /* ]]> */
+    </script>
+</head>
+<body class="body">
+    <div>
+        <div style="width: 778px; height: 780px;">
+            <div id="header">
+                <div style="padding-left: 305px; padding-top: 58px;" class="head">
+                    DON'S WEDDINGS</div>
+                <div style="padding-left: 310px; padding-top: 0px; line-height: 10px;" class="slogentxt">
+                    Weddings made easy!</div>
+            </div>
+            <div id="menu">
+                <div style="padding-left: 328px; padding-top: 38px;" class="menutxt">
+                    <a href="planner.html">PLANNER</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                        href="guestbook.html">GUESTBOOK</a>
+                </div>
+            </div>
+            <div style="width: 778px; height: 243px;">
+                <div id="left3" style="float: left">
+                    <div style="padding-left: 25px;">
+                        <div style="padding-left: 38px; padding-top: 10px;" class="heading">
+                            YOUR INFO
+                        </div>
+                        <div style="padding-left: 10px; padding-top: 10px; line-height: 17px;" class="content">
+                            <form action="" method="post" name="newGuest">
+                                <p>Guest
+                                    <input type="text" name="guestName" style="width: 180px" />
+                                </p>
+                                <p>Relationship
+                                <input type="text" name="relationship" style="width: 152px" />
+                                </p>
+                                <p><input type="button" value="Add Guest" onclick="var newGuest=addGuest(document.newGuest.guestName.value,document.newGuest.relationship.value);document.guestbook.guests.value = document.guestbook.guests.value + newGuest" /></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="right3" style="float: right">
+                    <div style="padding-left: 18px;">
+                        <div style="padding-left: 98px; padding-top: 9px;" class="heading">
+                            GUESTBOOK
+                        </div>
+                        <div style="padding-left: 98px; height: 110px;">
+                            <div class="content" style="padding-right: 0px; padding-left: 2px; float: left; padding-top: 16px;
+                                line-height: 18px;">
+                                <form action="" method="post" name="guestbook">
+                                    <p>Guest<br />
+                                        <textarea name="guests" cols="40" rows="8"></textarea>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="footertxt" style="padding-top: 28px; padding-left: 250px;">
+                    Copyright 2011. Don's Weddings. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
