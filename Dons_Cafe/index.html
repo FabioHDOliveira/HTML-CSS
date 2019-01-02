@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            <title>Don's Cafe</title>
+            <link href="style.css" rel="stylesheet" type="text/css" />
+            <script type="text/javascript" src="coffees.js"></script>
+        </head>
+        <body>
+            <div id="mainbody">
+              <div id="header">
+                  <img src="images/header.gif" width="761" height="345" alt="" />
+             </div>
+             <div id="contentarea">
+                 <img src="images/about_service.gif" alt=""/>
+                 <p>
+                    <script type="text/javascript">
+                        /* <![CDATA[ */
+                        /*
+                        JavaScript code for chapter 8. The purpose of this code is simply to demonstrate how to add a script section to a Web page.
+                        */
+                        //Fabio Oliveira
+                        //10/30/2017                    
+                        document.write("<p><strong>Buy two pounds</strong>");
+                        document.write(" of any of our speciality coffees");
+                        document.write(" and receive a third pound free!</p>");
+                        /* ]]> */
+                    </script>
+                 </p>
+                 <img src="images/special_service.gif" alt=""/>
+
+                    <form name="coffeeList" action="" method="get">
+                        <p>
+                            Click the buttons for a description of each coffee.
+                        </p>
+                        <p>
+                          <input type="radio" name="coffees" onclick="document.coffeeList.coffeeDesc.value=blueMountain" />Jamaica Blue Mountain<br />
+                           <input type="radio" name="coffees" onclick="document.coffeeList.coffeeDesc.value=blueGrove" />Blue Grove Hawaiian Maui Premium<br />
+                           <input type="radio" name="coffees" onclick="document.coffeeList.coffeeDesc.value=sumatra" />Sumatra Supreme<br />
+                           <input type="radio" name="coffees" onclick="document.coffeeList.coffeeDesc.value=kona" />Pure Kona<br />
+                           <input type="radio" name="coffees" onclick="document.coffeeList.coffeeDesc.value=antigua" />Guatemala Antiga<br />
+                        </p>
+                        <p>
+                            <textarea name="coffeeDesc" cols="75" rows="20" style="background-color: transparent; border: none; overflow: hidden"></textarea>
+                        </p>
+                    </form>   
+
+                 <br class="clearcols" />
+             </div>
+             <div id="copyright">
+                 <p>Copyright &copy by 2011 Don's Cafe</p>
+                 <p class="copy">All Rights Reserved</p>
+                 <br class="clearcols" />                
+             </div>
+            </div>
+        </body>
+    </html>

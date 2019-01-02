@@ -1,0 +1,78 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+    background: url(images/pattern.gif) repeat 0px 0px;
+}
+div, p, h1, h2, h3, h4, h5, h6, img, ul, form
+{
+    padding: 0px;
+    margin: 0px;
+}
+#mainbody
+{
+    width: 780px;
+    margin: 0px auto;
+    padding: 9px 0 0 0px;
+    background: #632B1A;
+}
+#header
+{
+    width: 761px;
+    height: 345px;
+    margin: 0px auto;
+    padding: 6px 0px 6px 0px;
+    background: #632B1B;
+}
+
+#contentarea
+{
+    width: 780px;
+    margin: 0px auto;
+    padding: 15px 0px 12px 0px;
+    background: #3D0D01;
+}
+#contentarea p
+{
+    display: block;
+    width: 730px;
+    margin: 10px 10px 20px 15px;
+    text-align: justify;
+    display: block;
+    font: 11px/15px Verdana, Arial, Helvetica, sans-serif;
+    color: #97290E;
+    text-align: justify;
+}
+#contentarea textarea {
+    font: 11px/15px Verdana, Arial, Helvetica, sans-serif;
+    color: #97290E;
+}
+#contentarea img
+{
+    margin-left: 10px;
+}
+#copyright
+{
+    width: 780px;
+    margin: 0px auto;
+    height: 36px;
+}
+#copyright p
+{
+    width: 302px;
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    display: block;
+    float: left;
+    padding: 12px 0px 0px 130px;
+}
+#copyright p.copy
+{
+    width: 150px;
+    font: 11px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    display: block;
+    float: left;
+    padding: 12px 0px 0px 120px;
+}
+
