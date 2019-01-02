@@ -1,0 +1,38 @@
+img
+{
+    vertical-align: top;
+}
+td.header
+{
+    text-align: center;
+}
+body
+{
+    background-color: #840000;
+}
+.text
+{
+    font-family: Tahoma, Arial;
+    font-size: 11px;
+}
+span.c2
+{
+    color: #CCCCCC;
+}
+
+
+td.c2
+{
+    color: White;
+    padding: 80px;
+}
+td.c3
+{
+    text-align: center;
+}
+td.c5
+{
+    height: 10px;
+    color: White;
+    padding: 5px;
+}
