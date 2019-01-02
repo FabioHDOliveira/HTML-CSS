@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+            <title>Home Cinema</title>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            <link href="style.css" rel="stylesheet" type="text/css" />
+            
+    <script type="text/javascript">
+        /* <![CDATA[ */
+       
+        function addList(title, author) {
+            var sugestionsInfo = title + ", ";
+            sugestionsInfo += author + "\r";
+            return sugestionsInfo;
+        }
+        /* ]]> */
+    </script>
+            
+          
+        </head>
+        
+            <nav class="header1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a>Indoor Person</a>
+                        <ul class="sub-menu">
+                            <li><a href="Movies.html">Movies</a></li>
+                            <li><a href="Books.html">Books</a></li>
+                            <li><a href="Suggestions.html">Suggestions</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Going Out</a>
+                        <ul class="sub-menu">
+                            <li><a href="Shows.html">Shows</a></li>
+                            <li><a href="church.html">Church</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            
+            
+            <div style="background: url(images/bookform2.jpg) no-repeat center center fixed; background-size: 100%">
+				
+				<div class="sugestionstitle">Sugestions</div>
+				
+				<div class="sugestionssubtitle">We want to hear from you. What Book/Movie do you want to see here?</div>
+
+                <div style="float: left; padding-left: 315px; padding-top: 255px; padding-right: 4px; line-height: 17px; margin-left: 200px">
+                    <form action="" method="post" name="newList">
+                        <p style="color: black; font-size: 20px; font-family: fantasy">Title
+                            <input type="text" name="title" style="width: 205px; height: 25px; font-size: 18px" />
+                        </p>
+                        <p style="color: black; font-size: 20px; font-family: fantasy">Author
+                        <input type="text" name="author" style="width: 180px; height: 25px; font-size: 18px" />
+                        </p>
+                        <p><input type="button" value="Add Book/Movie" style="margin-left: 110px" onclick="var newList=addList(document.newList.title.value,document.newList.author.value);document.bookmoviesList.bookmovies.value = document.bookmoviesList.bookmovies.value + newList" /></p>
+                    </form>
+                </div>
+
+                <div style="float: center; padding-top: 275px">
+                    <form action="newwestphp.php" method="post" name="bookmoviesList">
+                        <p style="color: black; font-size: 24px; text-align: left; font-family: fantasy">Your Book/Movie List<br />
+                            <textarea name="bookmovies" cols="50" rows="13" style="font-size: 14px; margin: 10px 0px 0px 0%; padding-bottom: 0px"></textarea>
+                        </p>
+        				<p class="container">
+                            <input class="container btns" type="submit" value="Submit" />							
+                            <input class="container btnr" type="reset" value="Clear" />
+                        </p>
+                    </form>
+                </div>
+
+            </div
+				 
+				 
+            
+        </body>
+        
+    </html>

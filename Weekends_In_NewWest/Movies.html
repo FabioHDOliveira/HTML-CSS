@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+            <title>Home Cinema</title>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            <link href="style.css" rel="stylesheet" type="text/css" />
+
+            <style>
+                .cinemagallery{
+                    margin: 10px auto;
+                    width: 1420px;
+                    height: 300px;
+                    position: relative;
+                    overflow: hidden;
+                }
+                
+                .photo {
+                    position: absolute;
+                    opacity: 0;
+                    animation-name: animation;
+                    animation-duration: 30s;
+                    animation-iteration-count: infinite;
+                    
+                }
+                
+                @keyframes animation{
+                    25%{
+                        opacity: 1;
+                        transform:scale(1.1,1.1);
+                    }
+                    
+                    50%{
+                        opacity: 0;
+                    }
+                }
+                .photo:nth-child(1){
+                    
+                }
+                .photo:nth-child(2){
+                    animation-delay: 5s;
+                }
+                .photo:nth-child(3){
+                    animation-delay: 10s;
+                }
+                .photo:nth-child(4){
+                    animation-delay: 15s;
+                }
+
+                .photo:nth-child(5){
+                    animation-delay: 20s;
+                }
+                .photo:nth-child(6){
+                    animation-delay: 25s;
+                }
+
+            </style>
+            
+        </head>
+        
+        <body id="background">
+            
+            <nav class="header1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a>Indoor Person</a>
+                        <ul class="sub-menu">
+                            <li><a href="Movies.html">Movies</a></li>
+                            <li><a href="Books.html">Books</a></li>
+                            <li><a href="Suggestions.html">Suggestions</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Going Out</a>
+                        <ul class="sub-menu">
+                            <li><a href="Shows.html">Shows</a></li>
+                            <li><a href="church.html">Church</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+                                
+                    <section class="cinemagallery">
+                        <img class="photo" src="images/sneakypete.jpg" alt="sneak"/>
+                        <img class="photo" src="images/thewalkingdead.jpg" alt="walkingdead"/>
+                        <img class="photo" src="images/americangods.jpg" alt="americangods"/>
+                        <img class="photo" src="images/passengers.jpg" alt="passengers"/>
+                        <img class="photo" src="images/warapes.jpg" alt="warapes"/>
+                        <img class="photo" src="images/mebeforeyou.jpg" alt="mebeforeyou"/>
+
+                    </section>
+  
+                       
+                       
+            <div id="content">
+
+                <table>
+                    
+                    <colgroup span="4" style="width: 1420px"></colgroup>
+                    
+                    <thead>
+                        <tr height= "40px"><th></th>
+                        <th>TV Show/Movie</th>
+                        <th>Type</th>
+                        <th>Trailer</th></tr>
+                    
+                    </thead>
+                    
+                    <tbody style="text-align: center">
+                    
+                    <tr style="text-align: center" height="70px">
+                        <td rowspan="3">TV Show</td>
+                        <td>Sneaky Pete</td>
+                        <td>Drama</td>
+                        <td><a href="iframe1.html" style="color: blue">Link</a></td>
+                    </tr>
+                    <tr style="text-align: center" height="70px">
+                        <td>The Walking Dead</td>
+                        <td>Fiction/Horror</td>
+                        <td><a href="iframe2.html" style="color: blue">Link</a></td>
+                    </tr>
+                    <tr style="text-align: center" height="70px">                        
+                        <td>American Gods</td>
+                        <td>Novel</td>
+                        <td><a href="iframe3.html" style="color: blue">Link</a></td>
+                    </tr>
+                    <tr style="text-align: center" height="70px">
+                        <td rowspan="3">Movies</td>
+                        <td>Passengers</td>
+                        <td>Science/Romance</td>
+                        <td><a href="iframe4.html" style="color: blue">Link</a></td>
+                    </tr>
+                     <tr style="text-align: center" height="70px">
+                        <td>War for The Planet of Apes</td>
+                        <td>Fiction</td>
+                        <td><a href="iframe5.html" style="color: blue">Link</a></td>
+                    </tr>
+                     
+                    <tr style="text-align: center" height="70px">
+                        <td>Me Before You</td>
+                        <td>Romance/Drama</td>
+                        <td><a href="iframe6.html" style="color: blue">Link</a></td>
+                    </tr>
+                     
+                    </tbody>
+                </table>
+                    
+            </div>
+
+            
+        </body>
+            
+    </html>
+  
